@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>seajs-localstorage</title>
+</head>
+<body>
+<script src="../lib/sea-debug.js"></script>
+<script src="../lib/seajs-preload.js"></script>
+<script>
+    seajs.config({
+        base: '//midas.gtimg.cn/midas/js/',
+        preload: ["seajs-localstorage"],
+        localstorage: {
+            manifest: {
+                "mod/3glogin": "9e8ac037",
+                "mod/animate": "6532bf3e",
+                "mod/aq": "1d159267",
+                "mod/avalon.mobile": "72938321",
+                "mod/cgi": "b9ebf2cd",
+                "mod/cryptojs": "6837825b",
+                "mod/enterapp": "220caed1",
+                "mod/fastclick": "b4a41f99",
+                "mod/global": "1d622dae",
+                "mod/history": "605cad3d",
+                "mod/iscroll": "5e989ed1",
+                "mod/iscroll5-lite": "d653c617",
+                "mod/iscroll5": "2ea1a588",
+                "mod/login": "523ca862",
+                "mod/md5": "406d783b",
+                "mod/mqqdebug": "17727f00",
+                "mod/nav": "1f2cb4ba",
+                "mod/observer": "2f718662",
+                "mod/open": "7c55951a",
+                "mod/page": "fd54aa36",
+                "mod/promise": "4f42bf5c",
+                "mod/promiseAplus": "17f5e450",
+                "mod/ptlogin": "e01d4e86",
+                "mod/pub": "121ea141",
+                "mod/qq": "38c66a80",
+                "mod/richInput": "67e2f20c",
+                "mod/sdkLoginState": "469ecf81",
+                "mod/sid": "157c60e3",
+                "mod/skey": "515c2677",
+                "mod/ui": "6c883a0d",
+                "mod/util": "87fdf51d",
+                "mod/wechat": "74071b79",
+                "sdk/account/loadingtmpl": "227061f5",
+                "sdk/account/main": "e68ed160",
+                "sdk/account/services": "57117063",
+                "sdk/daifu/game-config": "d2f6914a",
+                "sdk/daifu/game-main": "edeaa5aa",
+                "sdk/daifu/pay-result": "206463cf",
+                "sdk/daifu/wx-pay": "5953bb1e",
+                "sdk/hongbao/data-access": "523cfd5d",
+                "sdk/hongbao/gameconfig": "38066380",
+                "sdk/hongbao/grab": "25cee7f9",
+                "sdk/hongbao/handle-game": "e56a177f",
+                "sdk/hongbao/helper": "b8abe784",
+                "sdk/hongbao/history": "f4955a63",
+                "sdk/hongbao/rule": "0b8f1693",
+                "sdk/hongbao/share": "8b460e4d",
+                "sdk/ios-jailbreak/channels/bank": "21b83c21",
+                "sdk/ios-jailbreak/channels/cft": "43fb45aa",
+                "sdk/ios-jailbreak/channels/mcard": "b7aa12ae",
+                "sdk/ios-jailbreak/channels/qqaccount": "3f294cfb",
+                "sdk/ios-jailbreak/channels/qqcard": "9856138d",
+                "sdk/ios-jailbreak/main": "820438b6",
+                "sdk/ios-jailbreak/payModel": "98a30ff1",
+                "sdk/ios-jailbreak/ui-confirm": "21895ecb",
+                "sdk/mp/list": "803a0a44",
+                "sdk/mp/main": "0f62172f",
+                "sdk/mp/other": "280302c5",
+                "sdk/mp/qcoin-hongbao/sdk-hongbao": "4b8072a5",
+                "sdk/mp/qcoin-hongbao/wechat-hongbao": "b2c4c14e",
+                "sdk/mp/result": "f9c16b69",
+                "sdk/mp/tuan": "c60ecba3",
+                "sdk/mqq/result": "fc6a6996",
+                "sdk/tpl/daifu/amount-column": "803bbcaf",
+                "sdk/tpl/daifu/game-pay-h": "df3f76fb",
+                "sdk/tpl/daifu/game-pay": "de6b3e73",
+                "sdk/tpl/daifu/pay-content": "f0dbbcbb",
+                "sdk/tpl/daifu/wx-pay-content": "cfd4d098",
+                "sdk/tpl/hongbao/grab-detail": "6e86a978",
+                "sdk/tpl/hongbao/grab-record": "a9fb3ecf",
+                "sdk/tpl/hongbao/history-list": "81880801",
+                "sdk/tpl/hongbao/rob-detail": "3bb24442",
+                "sdk/tpl/hongbao/share": "64c7a553",
+                "sdk/tpl/mp/ad_tips": "362d2fe7",
+                "sdk/tpl/mp/buy_price": "df2ed80c",
+                "sdk/tpl/mp/cell-phone-fee/index": "de1f06e0",
+                "sdk/tpl/mp/hongbao/result": "96a7be52",
+                "sdk/tpl/mp/index": "05f67ce0",
+                "sdk/tpl/mp/index_hor": "2faf982f",
+                "sdk/tpl/mp/other": "4dd44732",
+                "sdk/tpl/mp/other_mp_tips": "2d9bd83d",
+                "sdk/tpl/mp/result": "da28a33c",
+                "sdk/tpl/mp/sdk_hongbao": "d8bb40e0",
+                "sdk/tpl/mp/second-market/index": "66e7a40c",
+                "sdk/tpl/mp/tuan/tuan_detail": "60e70d23",
+                "sdk/tpl/mp/tuan/tuan_hor": "89d24fa8",
+                "sdk/tpl/mp/tuan/tuan_time": "d4125c67",
+                "sdk/tpl/mp/utp_info": "208bd9c1",
+                "sdk/tpl/mp/wechat-hongbao/hongbao_action": "1e19854a",
+                "sdk/tpl/mp/wechat-hongbao/hongbao_detail": "93765dba",
+                "sdk/tpl/mp/wechat-hongbao/hongbao_record": "123f62c4",
+                "sdk/tpl/mqq/result": "e1723560",
+                "sdk/tpl/template": "a23102a3"
+            },
+            comboSyntax: ['/c/=', ','],
+            //comboMaxLength:100,
+            dependencies: {
+                "sdk/mp/main": ["../../mod/util", "../../mod/nav", "../../mod/animate", "../../mod/fastclick", "./list", "../../mod/iscroll5-lite", "../tpl/mp/index", "../tpl/mp/ad_tips", "../tpl/template", "../tpl/mp/utp_info", "../tpl/mp/buy_price", "../tpl/mp/index_hor", "./tuan", "../tpl/mp/tuan/tuan_hor", "../tpl/mp/tuan/tuan_detail", "../tpl/mp/tuan/tuan_time", "./other", "../tpl/mp/other", "../tpl/mp/other_mp_tips", "./result", "../tpl/mp/result", "../tpl/mp/second-market/index", "../tpl/mp/hongbao/result", "../tpl/mp/cell-phone-fee/index", "../../mod/sdkLoginState", "../../mod/cgi", "../../mod/cryptojs", "../../mod/ui"]
+            }
+        }
+    });
+    seajs.on("load", function (uris) {
+        console.log("load " + JSON.stringify(uris))
+    })
+
+    seajs.on("fetch", function (data) {
+        console.log("fetch " + JSON.stringify(data))
+    })
+</script>
+<script src="../src/seajs-localstorage.js"></script>
+<script>
+    seajs.use("sdk/mp/main", function () {
+        console.log("done")
+    })
+</script>
+</body>
+</html>

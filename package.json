@@ -1,0 +1,22 @@
+{
+  "name": "seajs-localstorage",
+  "version": "1.0.0",
+  "description": "seajs localstorage plugin",
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "example",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shaynegui",
+  "license": "MIT",
+  "dependencies": {
+    "cmd-util": "^0.3.13"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-replace": "^0.5.3"
+  }
+}
